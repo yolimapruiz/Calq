@@ -50,12 +50,10 @@
 + (double)tangent:(double)value {
     // converts degrees to radians
     double radians = value * M_PI / 180.0;
-    NSLog(@"DEBUG: Calculando tangente. Grados: %f, Radianes: %f", value, radians);
 
     // verifies if cos is near to 0
     double cosine = cos(radians);
     if (fabs(cosine) < 1e-10) {
-        NSLog(@"DEBUG: Tangente indefinida para %f grados (cos = %f)", value, cosine);
         return NAN; // not a number
     }
 

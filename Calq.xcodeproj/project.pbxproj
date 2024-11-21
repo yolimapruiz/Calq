@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		95AC5F0A2CED7A6F001E445C /* calculatorCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AC5F092CED7A6F001E445C /* calculatorCore.m */; };
-		95AC5F0C2CED7E78001E445C /* CalqViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AC5F0B2CED7E78001E445C /* CalqViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9523B59B2CED72A200FA8172 /* Calq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AC5F082CED7A6F001E445C /* Calq-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calq-Bridging-Header.h"; sourceTree = "<group>"; };
 		95AC5F092CED7A6F001E445C /* calculatorCore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorCore.m; sourceTree = "<group>"; };
-		95AC5F0B2CED7E78001E445C /* CalqViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalqViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +38,6 @@
 		9523B5922CED72A200FA8172 = {
 			isa = PBXGroup;
 			children = (
-				95AC5F0B2CED7E78001E445C /* CalqViewModel.swift */,
 				9523B59D2CED72A200FA8172 /* Calq */,
 				9523B59C2CED72A200FA8172 /* Products */,
 				95AC5F082CED7A6F001E445C /* Calq-Bridging-Header.h */,
@@ -132,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AC5F0A2CED7A6F001E445C /* calculatorCore.m in Sources */,
-				95AC5F0C2CED7E78001E445C /* CalqViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

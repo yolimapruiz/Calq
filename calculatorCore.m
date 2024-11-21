@@ -23,19 +23,43 @@
 }
 
 + (double)divide:(double)a by:(double)b {
-    return b != 0 ? a / b : NAN; // Handle division by zero
+    return  a / b;
 }
 
 + (double)sine:(double)value {
-    return sin(value);
+   
+    double radians = value * M_PI / 180.0;
+    double result =  sin(radians);
+    if (fabs(result) < 1e-10) {
+        result = 0.0;
+    }
+    return result;
 }
 
 + (double)cosine:(double)value {
-    return cos(value);
+    
+    double radians = value * M_PI / 180.0;
+    double result = cos(radians);
+    
+    if (fabs(result) < 1e-10) {
+        result = 0.0;
+    }
+    return result;
 }
 
 + (double)tangent:(double)value {
-    return tan(value);
+    // converts degrees to radians
+    double radians = value * M_PI / 180.0;
+    NSLog(@"DEBUG: Calculando tangente. Grados: %f, Radianes: %f", value, radians);
+
+    // verifies if cos is near to 0
+    double cosine = cos(radians);
+    if (fabs(cosine) < 1e-10) {
+        NSLog(@"DEBUG: Tangente indefinida para %f grados (cos = %f)", value, cosine);
+        return NAN; // not a number
+    }
+
+    return tan(radians);
 }
 
 @end
